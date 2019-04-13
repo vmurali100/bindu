@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Tel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of rightUsers">
+      <td scope="col">{{ user.fname }}</td>
+      <td scope="col">{{ user.lname }}</td>
+      <td scope="col">{{ user.tel }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Tel</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <td scope="col">{{ user.fname }}</td>
+      <td scope="col">{{ user.lname }}</td>
+      <td scope="col">{{ user.tel }}</td>
+      <td>
+        <button class="btn btn-info" (click)="editUser(user, i)">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-warning" (click)="moveUser(user, i)">
+          Move
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

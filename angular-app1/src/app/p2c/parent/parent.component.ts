@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-  myName:string;
+  myObj;
   constructor() { }
 
   ngOnInit() {
   }
   sendValue(){
-    console.log("sendValue is Trigged")
-    this.myName = "I am Murali from Parent Component"
+    this.myObj = {
+      fname:"Murali Krishna"
+    }
   }
 }
